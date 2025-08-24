@@ -28,9 +28,9 @@ function Tasks({ tasks, onTaskClick, onDeleteTasksClick }) {
             <ChevronRightIcon />
           </Button>
 
-          <button onClick={() => onDeleteTasksClick(task.id)}>
+          <Button onClick={() => onDeleteTasksClick(task.id)}>
             <Trash2 />
-          </button>
+          </Button>
         </li>
       ))}
     </ul>

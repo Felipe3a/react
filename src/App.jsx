@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AddTask from "./components/AddTasks";
 import Tasks from "./components/Tasks";
 import { v4 } from "uuid";
+import Title from "./components/Title";
 
 function App() {
   const [tasks, setTasks] = useState(() => {
@@ -62,9 +63,7 @@ function App() {
   return (
     <div className="w-screen min-h-screen bg-slate-500 flex justify-center p-6 ">
       <div className="w-[500px] space-y-4">
-        <h1 className=" text-3xl text-slate-100 font-bold text-center">
-          Gerenciador de Tarefas
-        </h1>
+        <Title>Gerednciador de Tarefas</Title>
 
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
 
